@@ -1,0 +1,97 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9a8b, #fad0c4);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    transition: background 0.5s ease;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 25px;
+    padding: 40px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #6c5ce7;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    transition: opacity 0.5s ease;
+}
+
+main p {
+    font-size: 1.5rem;
+    color: #4e4e4e;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+button {
+    background-color: #6c5ce7;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #5e47d1;
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #b2bec3;
+}
+
+/* Animación de fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Efecto de transformación para el contenedor */
+@keyframes containerZoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Animación de entrada suave */
+.container {
+    animation: containerZoomIn 1.5s ease-out;
+}
