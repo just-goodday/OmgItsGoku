@@ -4,8 +4,8 @@ const mensaje = document.getElementById("mensaje");
 
 // Agrega un evento al botón
 boton.addEventListener("click", () => {
-    mensaje.textContent = "¡Bien hecho! Ahora estás listo para lo que sigue.";
-    mensaje.style.color = "#ff6f61";  // Color suave
+    mensaje.textContent = "¡Bien hecho! Haz recibido tu primer: Hola Mundo :)";
+    mensaje.style.color = "##0000001a";  // Color suave
     mensaje.style.fontSize = "2rem";
 
     // Efecto de expansión del contenedor
